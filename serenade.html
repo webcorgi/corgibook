@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>serenade</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="./js/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="./js/modernizr.2.5.3.min.js"></script>
+</head>
+
+<body>
+	<div class="menu-button">
+		<button onclick="showMenu()" class="btn__menu">
+			<img src="./img/ico_menu.png" alt="menu">
+		</button>
+		<div class="menu-list">
+			<button onclick="hideMenu()" class="btn__close">
+				<img src="./img/ico_close.png" alt="menu">
+			</button>
+			<a href="#">동화 1</a>
+			<a href="#">동화 2</a>
+			<a href="#">동화 3</a>
+			<a href="#">동화 4</a>
+			<a href="#">동화 5</a>
+		</div>
+	</div>
+
+	<div class="flipbook-viewport">
+		<div class="container">
+			<div class="flipbook" id="flipbook">
+				<div style="background-image:url(pages/1.jpg)"></div>
+				<div style="background-image:url(pages/2.jpg)"></div>
+				<div style="background-image:url(pages/3.jpg)"></div>
+				<div style="background-image:url(pages/4.jpg)"></div>
+				<div style="background-image:url(pages/5.jpg)"></div>
+				<div style="background-image:url(pages/6.jpg)"></div>
+				<div style="background-image:url(pages/7.jpg)"></div>
+				<div style="background-image:url(pages/8.jpg)"></div>
+				<div style="background-image:url(pages/9.jpg)"></div>
+				<div style="background-image:url(pages/10.jpg)"></div>
+				<div style="background-image:url(pages/11.jpg)"></div>
+				<div style="background-image:url(pages/12.jpg)"></div>
+			</div>
+		</div>
+	</div>
+	<div class="flipbook-pagination">
+		<div>
+			<button class="btn-first" onclick="goToFirstPage()"></button>
+			<button class="btn-prev" onclick="movePrev()"></button>
+		</div>
+		<div>
+			<button class="btn-next" onclick="moveNext()"></button>
+			<button class="btn-last" onclick="goToLastPage()"></button>
+		</div>
+		<span class="page-info">Page <span class="current-page">1</span> / <span class="total-pages">12</span></span>
+	</div>
+
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
