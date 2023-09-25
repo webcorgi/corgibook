@@ -205,14 +205,19 @@ body{
 }
 .menu-list a {
 	display: block;
-	padding: 5px 10px;
+	padding: 20px 10px;
 	text-decoration: none;
 	color:#666;
 	background: whitesmoke;
-	padding:10px;
 	margin-bottom: 10px;
 	text-align: left;
 	font-weight: bold;
+	transition-duration: .5s;
+	border-radius: 5px;
+}
+.menu-list a.active,
+.menu-list a:hover {
+	background: #b5ffb9;
 }
 .mouseinfo {
 	position: fixed;
