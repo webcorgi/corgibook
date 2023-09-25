@@ -245,17 +245,26 @@
 	</div>
 	<div class="flipbook-pagination">
 		<div>
-			<button class="btn-first" onclick="goToFirstPage()"></button>
+			<!-- <button class="btn-first" onclick="goToFirstPage()"></button> -->
 			<button class="btn-prev" onclick="movePrev()"></button>
 		</div>
 		<div>
 			<button class="btn-next" onclick="moveNext()"></button>
-			<button class="btn-last" onclick="goToLastPage()"></button>
+			<!-- <button class="btn-last" onclick="goToLastPage()"></button> -->
 		</div>
 		<span class="page-info">Page <span class="current-page">1</span> / <span class="total-pages">12</span></span>
 	</div>
 
 	<script type="text/javascript" src="./js/script.js"></script>
+	<script>
+		yepnope({
+			test: Modernizr.csstransforms,
+			yep: ['./js/turn.js'],
+			nope: ['./js/turn.html4.min.js'],
+			both: ['./css/basic.css'],
+			complete: loadApp
+		})
+	</script>
 </body>
 
 </html>

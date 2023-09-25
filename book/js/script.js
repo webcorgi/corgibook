@@ -1,10 +1,4 @@
-yepnope({
-    test: Modernizr.csstransforms,
-    yep: ['./js/turn.js'],
-    nope: ['./js/turn.html4.min.js'],
-    both: ['./css/basic.css'],
-    complete: loadApp
-});
+
 
 const flipbook = $('#flipbook')
 let lastPage = flipbook.children().length
